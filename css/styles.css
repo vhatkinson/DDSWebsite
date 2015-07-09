@@ -11,8 +11,13 @@ body {
 	background: #fff;
 	border-radius: 8px;
 }
+/*****Header****/
 header{
 	padding:20px 0;
+}
+#logo {
+    width: 90px;
+    float: left;
 }
 /*****Footer*****/
 footer {
@@ -20,7 +25,7 @@ footer {
 	width: 819px;
 	background: rgb(0,85,61); /*forest green*/
 	border-radius: 8px;
-	padding: .5px 0;
+	padding: 0;
 }
 footer p {
 	text-align: center;
@@ -52,27 +57,35 @@ footer p {
 	overflow: auto;
 	padding: 0 0 0 5px;
 }
+#yelp_badge {
+    float: left;
+    overflow: auto;
+    padding: 0 0 0 5px;
+}
+#yelp_badge img {
+    width: 65px;
+}
 #copyright_info {
 	padding: 80px 0 0 0;
 }
 /*****Headings*****/
 h1 {
-	font: Helvetica, sans-serif;
-	margin: 0 0;
+    font-family: Helvetica, sans-serif;
+    margin: 0 0;
 }
 h2 {
-	font: Arial, Helvetica, sans-serif;
+	font-family: Arial, Helvetica, sans-serif;
 	margin: 15px 0;
 }
 h3 {
-	font: Arial, Helvetica, sans-serif;
+	font-family: Arial, Helvetica, sans-serif;
 }
 h4 {
-	font: Arial, Helvetica, sans-serif;
+	font-family: Arial, Helvetica, sans-serif;
 }
 /*****Navigation Bar*****/
 nav {
-	width: 800;
+	width: 800px;
 	display: inline-block;
 }
 /*.menu {
@@ -114,7 +127,7 @@ nav {
 .sub-menu {
 	padding: 0;
 	position: absolute;
-	top: 29.5px;
+	top: 30px;
 	left: 0;
 	width: 150px;
 	display: none;
@@ -155,8 +168,8 @@ nav {
 /*****Search Engine Optimization*****/
 .seo {
 	visibility: hidden;
-	font-size: 0.1px;
+	font-size: 0;
 	float:left;
-	overflow:none;
+	overflow: hidden;
 	width:800px;
 }
