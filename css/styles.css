@@ -11,13 +11,21 @@ body {
 	background: #fff;
 	border-radius: 8px;
 }
+#content {
+    margin-left: 20px;
+}
 /*****Header****/
 header{
-	padding:20px 0;
+	margin:20px 0 20px 20px;
+}
+header a {
+    text-decoration: none;
+    color: #000000;
 }
 #logo {
-    width: 90px;
+    width: 70px;
     float: left;
+    padding-right: 5px;
 }
 /*****Footer*****/
 footer {
@@ -55,18 +63,23 @@ footer p {
 	float: left;
 	width: 68px;
 	overflow: auto;
-	padding: 0 0 0 5px;
+    padding-left: 5px;
 }
 #yelp_badge {
     float: left;
     overflow: auto;
-    padding: 0 0 0 5px;
+    padding-left: 5px;
 }
 #yelp_badge img {
     width: 65px;
 }
+#google_badge img {
+    width: 65px;
+    float: left;
+    padding-left: 4px;
+}
 #copyright_info {
-	padding: 80px 0 0 0;
+    padding-top: 80px;
 }
 /*****Headings*****/
 h1 {
@@ -164,6 +177,25 @@ nav {
 }
 .menu-option a:visited {
 	color: #FFF;
+}
+/*****Misc.*****/
+#dr_delucia_photo {
+    float: left;
+    width: 90px;
+    margin-right: 5px;
+    border: 1px black solid;
+}
+ul {
+    list-style-image: url("../images/tooth_icon_1.png");
+}
+ul a {
+    text-decoration: none;
+}
+#angies-list-web-badge_testimonials iframe{
+    width:100%;
+    height: 157px;
+    margin: 0;
+    display: block;
 }
 /*****Search Engine Optimization*****/
 .seo {
