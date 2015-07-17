@@ -2,7 +2,8 @@
 body {
 	margin: 0 auto;
 	width: 800px;
-    background: #5e4e3e; /*dark brown*/
+    /*background: #5e4e3e; /*dark brown*/
+    background: url("../images/bkgd_dark_wood.jpg") repeat;
 }
 #page {
 	width: 780px;
@@ -20,14 +21,38 @@ body {
 header{
 	margin:20px 0 20px 20px;
 }
-header a {
-    text-decoration: none;
-    color: #000000;
+h1 {
+    /*font-family: "Halant", serif;*/
+    font-variant: small-caps;
+    font-size: 30px;
+    margin-bottom: 10px;
+    padding: 0;
+    line-height: 35px;
+    /*display: inline;*/
+    color: #5e4e3e; /*dark brown*/
+}
+/*.big {
+    font-size: 50px;
+}*/
+#halant {
+    font-family: "Halant";
+}
+#playfair {
+    font-family: "Playerfair Display";
+    font-weight: 200;
+}
+#libre {
+    font-family: "Libre Baskerville";
+}
+#merri {
+    font-family: "Merriweather";
+    font-weight: 300;
 }
 #logo {
     width: 70px;
     float: left;
     padding-right: 5px;
+    margin-bottom: 10px;
 }
 #menu_photo {
     margin-left: -10px;
@@ -38,11 +63,8 @@ header a {
 /*****Footer*****/
 footer {
     width: 780px;
-    margin: 4px auto;
-    padding: 10px;
-    /*margin: 4px auto;
-    padding: 0
-	width: 819px;*/
+    margin: 10px auto;
+    padding: 5px 10px;
 	background: rgb(0,85,61); /*forest green*/
 	border-radius: 8px;
 }
@@ -100,11 +122,8 @@ nav {
 }
 .menu {
     width: 760px;
-    /*margin: 0 0 0 5px;*/
-    margin: 15px;
-    margin-bottom: 5px;
+    margin: 15px 15px 5px 15px;
     padding: 0;
-	/*padding-left: 10px;*/
 }
 .menu-option{
     text-shadow: 0 0 4px black;
@@ -121,13 +140,13 @@ nav {
 	background: rgb(0,85,61); /*forest green*/
     border-width:1px;
     border-style:none solid;
-    border-color:rgb(128,111,89); /*brown*/
+    border-color:rgb(128,111,89); /*light brown*/
 }
 .menu-option a:hover {
-	background: rgb(128,111,89); /*brown*/
+	background: rgb(128,111,89); /*light brown*/
 }
 .menu-option a:active {
-	background: rgb(128,111,89); /*brown*/
+	background: rgb(128,111,89); /*light brown*/
 }
 .sub-menu {
 	padding: 0;
@@ -145,14 +164,14 @@ nav {
   visibility: visible;
 }
 .sub-menu-option {
-    background: rgb(128,111,89); /*brown*/
+    background: rgb(128,111,89); /*light brown*/
 	display: block; 
 }
 .sub-menu-option a {
 	display: inline-block;
 }
 .sub-menu-option a:hover {
-    background: rgb(128,111,89); /*brown*/
+    background: rgb(128,111,89); /*light brown*/
 }
 /*animations for the links*/
 .menu-option a:link {
@@ -169,28 +188,33 @@ nav {
 
 
 /*****Headings*****/
-h1 {
-    font-family: Helvetica, sans-serif;
-    margin: 0 0;
-}
 h2 {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 15px 0;
+    font-family: Helvetica, Arial, sans-serif;
+    font-variant: small-caps;
+    font-weight: 300;
+    margin: 15px 15px 15px 0;
+    background: url("../images/bkgd_dark_wood.jpg") repeat;
+    border: groove;
+    color: #FFFFFF;
+    padding: 4px;
+    font-size: 30px;
 }
 h3 {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
 }
 h4 {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
+}
+p {
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 
 /*****Misc. Content*****/
 #dr_delucia_photo {
     float: left;
-    width: 90px;
+    width: 150px;
     margin-right: 10px;
-    /*border: 1px black solid;*/
     box-shadow: 3px 3px 4px black;
 }
 #google_map {
@@ -225,7 +249,8 @@ h4 {
     text-align: center;
 }
 ul {
-    list-style-image: url("../images/tooth_icon_1.png");
+    list-style-image: url("../images/tooth_icon.png");
+    font-family: Arial, Helvetica, sans-serif;
 }
 article h3 {
     background-color: rgb(0,85,61); /*forest green*/
@@ -233,6 +258,23 @@ article h3 {
     padding: 5px;
     margin-right: 20px;
 }
+#slideShow {
+    width: 400px;
+    border: 5px black;
+}
+#botox_logo {
+    width: 200px;
+}
+#juv_logo {
+    width: 200px;
+}
+#rad_logo {
+    width: 200px;
+}
+#xeo_logo {
+    width: 200px;
+}
+
 
 /*****Link Design*****/
 a {
@@ -251,4 +293,6 @@ a:visited {
 	float:left;
 	overflow: hidden;
 	width:800px;
+    border: none;
+    background: none;
 }
