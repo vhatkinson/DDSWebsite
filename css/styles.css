@@ -1,68 +1,130 @@
 /*****Main Content*****/
 body {
 	margin: 0 auto;
-	width: 800px;
-    /*background: #5e4e3e; /*dark brown*/
-    background: url("../images/bkgd_dark_wood.jpg") repeat;
+	width: 950px; /*98%*/
+    background: rgb(45,23,21); /*dark brown*/
+    /*background: rgb(128,111,89); /*light brown*/
 }
 #page {
-	width: 780px;
+	width: 930px; /*95%*/
 	margin: 0 auto;
 	padding: 10px;
 	background: #fff;
 	border-radius: 8px;
 }
 #content {
-    padding-left: 20px;
 }
 
 
 /*****Header****/
 header{
-	margin:20px 0 20px 20px;
+    margin-bottom: 10px;
+}
+#header_left {
+    width: 750px;
+    display: inline-block;
+}
+#header_right {
+    display: inline-block;
+    float: right;
+    padding: 0;
+    margin: 0;
+    width: 180px;
+    text-align: right;
+    font-family: "Playfair Display", Helvetica, serif;
+    font-variant: small-caps;
+    font-size: 25px;
+    color: rgb(45,23,21); /*dark brown*/
+}
+header a {
+    text-decoration: none;
 }
 h1 {
-    /*font-family: "Halant", serif;*/
+    font-family: "Playfair Display", Helvetica, serif;
     font-variant: small-caps;
     font-size: 30px;
-    margin-bottom: 10px;
+    margin: 0;
     padding: 0;
     line-height: 35px;
-    /*display: inline;*/
-    color: #5e4e3e; /*dark brown*/
-}
-/*.big {
-    font-size: 50px;
-}*/
-#halant {
-    font-family: "Halant";
-}
-#playfair {
-    font-family: "Playerfair Display";
-    font-weight: 200;
-}
-#libre {
-    font-family: "Libre Baskerville";
-}
-#merri {
-    font-family: "Merriweather";
-    font-weight: 300;
+    color: rgb(45,23,21); /*dark brown*/
 }
 #logo {
     width: 70px;
     float: left;
-    padding-right: 5px;
-    margin-bottom: 10px;
+    margin-right: 5px;
 }
 #menu_photo {
-    margin-left: -10px;
-    margin-top: 2px;
+    margin: 0 auto;
+    width: 95%;
+    display: block;
 }
+
+
+
+/*****Navigation*****/
+nav {
+    margin: 0;
+}
+#menu {
+    margin: 0 auto 10px auto;
+    padding: 0;
+    width: 906px;
+    list-style: none;
+    box-shadow: 2px 4px 5px;
+}
+#menu li {
+    display: inline-block;
+    position: relative;
+}
+#menu a {
+    color: #FFFFFF;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-variant: small-caps;
+}
+#first_menu_option {
+    background: rgb(0,85,61); /*forest green*/
+    margin-right: -2px;
+    padding: 10px 23px;
+}
+#first_menu_option:hover {
+    background: rgb(45,23,21); /*dark brown*/
+}
+.menu_option {
+    background: rgb(0,85,61); /*forest green*/
+    margin: 0 -3px;
+    padding: 10px 23px;
+    position: relative;
+    display: inline-block;
+}
+.menu_option a:visited {
+    color: #FFFFFF;
+}
+.menu_option:hover {
+    background: rgb(45,23,21); /*dark brown*/
+}
+#submenu {
+    display: none;
+    position: absolute;
+    width: 150px;
+    padding: 0;
+    left: -2px;
+    box-shadow: 2px 4px 5px;
+}
+.submenu_option {
+    display: block;
+    padding: 10px 23px 10px 10px;
+    background: rgb(45,23,21); /*dark brown*/
+}
+.submenu_option:hover {
+    background: rgb(0,85,61); /*forest green*/
+}
+
 
 
 /*****Footer*****/
 footer {
-    width: 780px;
+    width: 930px; /*95%*/
     margin: 10px auto;
     padding: 5px 10px;
 	background: rgb(0,85,61); /*forest green*/
@@ -72,118 +134,27 @@ footer p {
 	text-align: center;
 	color: #fff;
 }
-#tc {
+.txt_drop_shadow {
 	text-shadow:4px 4px 2px #000;
 }
 /**Footer Badges**/
 #footer_badges {
-	margin: 0 0 0 20px;
-	width: 600px;
-	float: right;
+	width: 330px;
+    margin: auto;
 }
-#angies-list-web-badge iframe{
-	width: 50%;
-	margin: 0;
-	height: 50px;
-	display: inline;
-	background: #fff;
-	padding: 2px 2px 0 3px;
-	float: left;
-	overflow: auto;
+#angies-list-web-badge {
+    background: #FFFFFF;
+    width: 150px;
+    height: 50px;
 }
-#facebook_link {
-	display: inline;
-	float: left;
-	width: 68px;
-	overflow: auto;
+#fb_link, #yelp_badge, #google_badge {
+    display: inline;
     padding-left: 5px;
-}
-#yelp_badge {
-    float: left;
-    overflow: auto;
-    padding-left: 5px;
-}
-#yelp_badge img {
-    width: 65px;
-}
-#google_badge img {
-    width: 65px;
-    float: left;
-    padding-left: 4px;
+    height: 50px;
+    vertical-align: top;
 }
 #copyright_info {
-    padding-top: 80px;
-}
-
-
-/*****Navigation Bar*****/
-nav {
-	display: inline-block;
-}
-.menu {
-    width: 760px;
-    margin: 15px 15px 5px 15px;
-    padding: 0;
-}
-.menu-option{
-    text-shadow: 0 0 4px black;
-	font: small-caps bold 15px sans-serif;
-	display: inline-block;
-	margin: -2px;
-	background: rgb(0,85,61); /*forest green*/
-	position: relative;
-	cursor: pointer;
-}
-.menu-option a {
-	display: inline-block;
-	padding: 7px;
-	background: rgb(0,85,61); /*forest green*/
-    border-width:1px;
-    border-style:none solid;
-    border-color:rgb(128,111,89); /*light brown*/
-}
-.menu-option a:hover {
-	background: rgb(128,111,89); /*light brown*/
-}
-.menu-option a:active {
-	background: rgb(128,111,89); /*light brown*/
-}
-.sub-menu {
-	padding: 0;
-	position: absolute;
-	top: 30px;
-	left: 0;
-	width: 150px;
-	display: none;
-	opacity: 0;
-	visibility: hidden;
-}
-.menu-option:hover .sub-menu {
-  display: block;
-  opacity: 1;
-  visibility: visible;
-}
-.sub-menu-option {
-    background: rgb(128,111,89); /*light brown*/
-	display: block; 
-}
-.sub-menu-option a {
-	display: inline-block;
-}
-.sub-menu-option a:hover {
-    background: rgb(128,111,89); /*light brown*/
-}
-/*animations for the links*/
-.menu-option a:link {
-	text-decoration:none;
-	color:#FFF;
-}
-.menu-option a:active {
-	text-decoration: none;
-	color:#FFF;
-}
-.menu-option a:visited {
-	color: #FFF;
+    margin-top: 20px;
 }
 
 
@@ -219,11 +190,20 @@ p {
 }
 #google_map {
     margin: 0 auto;
-    width: 600px;
-    height: 400px;
+    width: 456px;
+    height: 300px;
+    display: inline-block;
+    alignment: right;
+    border: 2px rgb(0,85,61) /*forest green*/ solid;
 }
 #map_directions {
-    margin-left: 79px;
+    display: block;
+    text-align: right;
+}
+#contact_us_content {
+    display: inline-block;
+    width: 465px;
+    vertical-align: top;
 }
 #angies-list-web-badge_testimonials iframe {
     width:100%;
@@ -249,7 +229,7 @@ p {
     text-align: center;
 }
 ul {
-    list-style-image: url("../images/tooth_icon.png");
+    list-style: square;
     font-family: Arial, Helvetica, sans-serif;
 }
 article h3 {
@@ -296,3 +276,11 @@ a:visited {
     border: none;
     background: none;
 }
+
+/*****Color Palette*****/
+/*
+rgb(0,85,61); forest green
+rgb(128,111,89); light brown/tan
+#5e4e3e; brown
+rgb(45,23,21); dark brown
+*/

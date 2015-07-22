@@ -4,37 +4,47 @@
 	<meta charset="UTF-8">
     <link rel="stylesheet" href="../../css/styles.css"/>
 	<title>Dr. Anthony DeLucia, D.D.S. - Cosmetic Procedures</title>
+	<script>
+		function showMenu() {
+			document.getElementById("submenu").style.display="block";
+		}
+		function hideMenu() {
+			document.getElementById("submenu").style.display="none";
+		}
+	</script>
 </head>
 <body>
 <div id="page">
-    <header><a href="../../index.html">
-        <img id="logo" src="../../images/delucia_dds_logo.png" alt="Anthony DeLucia D.D.S., P.A. logo">
-        <h1>Anthony DeLucia D.D.S., P.A.<br>Implant, Cosmetic & General Dentistry</h1>
-    </a></header>
-    <nav>
-    	<ul class="menu">
-        	<li class="menu-option"><a href="../../index.html">Home</a></li>
-            <li class="menu-option"><a href="../meet_dr_delucia.html">Meet Dr. DeLucia</a></li>
-            <li class="menu-option"><a href="../services.html">Services</a>
-            	 <ul class="sub-menu">
-                    <li class="sub-menu-option"><a href="#">Cosmetic Procedures</a></li>
-                    <li class="sub-menu-option"><a href="dermal_fillers_and_facial_aesthetics.html">Dermal Fillers and Facial Aesthetics</a></li>
-                    <li class="sub-menu-option"><a href="iv_sedation_dentistry.html">I.V. Conscious Sedation Dentistry</a></li>
-                </ul>
-            </li>
-            <li class="menu-option"><a href="../smile_gallery.html">Smile Gallery</a></li>
-            <li class="menu-option"><a href="../patient_information.html">Patient Information</a></li>
-            <li class="menu-option"><a href="../testimonials.html">Testimonials</a></li>
-            <li class="menu-option"><a href="../contact_us.html">Contact Us</a></li>
-        </ul>
-    </nav>
+	<header><a href="../../index.html">
+		<div id="header_left">
+			<img id="logo" src="../../images/delucia_dds_logo.png" alt="Anthony DeLucia D.D.S., P.A. logo">
+			<h1>Anthony DeLucia, D.D.S., P.A.<br>Implant, Cosmetic & General Dentistry</h1>
+		</div>
+		<p id="header_right">772.287.7077</p>
+	</a></header>
+	<nav>
+		<ul id="menu">
+			<li><a href="../../index.html" id="first_menu_option">Home</a></li>
+			<li><a href="../meet_dr_delucia.html" class="menu_option">Meet Dr. DeLucia</a></li>
+			<li><a href="../services.html" class="menu_option" id="submenu_parent" onmouseover="showMenu()" onmouseout="hideMenu()">Services</a>
+				<ul id="submenu" onmouseover="showMenu()" onmouseout="hideMenu()">
+					<li><a href="#" class="submenu_option" >Cosmetic Procedures</a></li>
+					<li><a href="dermal_fillers_and_facial_aesthetics.html" class="submenu_option">Dermal Fillers & Facial Aesthetics</a></li>
+					<li><a href="iv_sedation_dentistry.html" class="submenu_option" >I.V. Conscious Sedation Dentistry</a></li>
+				</ul></li>
+			<li><a href="../smile_gallery.html" class="menu_option">Smile Gallery</a></li>
+			<li><a href="../patient_information.html" class="menu_option">Patient Information</a></li>
+			<li><a href="../testimonials.html" class="menu_option">Testimonials</a></li>
+			<li><a href="../contact_us.html" class="menu_option">Contact Us</a></li>
+		</ul>
+	</nav>
 	<img id="menu_photo" src="../../images/female_model_menu_photo.png">
     <div id="content">
     <div>
         <h2>Cosmetic Procedures</h2>
-        <p>Dr. Delucia offers the latest in dental procedures and technologies. For additional information on the most common procedures, click on the service below for additional information.</p>
+        <p>Dr. Delucia offers the latest in dental procedures and technologies. For additional information click on the most common procedures.</p>
         <ul class="cosmetic_list">
-            <li><a href="#inv">Invisalign</a></li>
+            <li><a href="#inv">Invisalign&reg</a></li>
             <li><a href="#white">Whitening</a></li>
             <li><a href="#dentIm">Dental Implants</a></li>
             <li><a href="#IRD">Implant Retained Dentures</a></li>
@@ -52,7 +62,7 @@
         </ul>
     </div>
     <article>
-        <h3 id="inv">Invisalign</h3>
+        <h3 id="inv">Invisalign&reg</h3>
         <h4>The Clear Alternative to Braces&reg</h4>
         <p>Developed with Orthodontists, Invisalign is a virtually invisible solution, so you can smile confidently both during treatment and after. Using a series of clear, removable aligners, Invisalign gradually moves your teeth toward the smile you've always wanted. and, almost no one will know you're wearing them unless you tell them.</p>
         <h4>Clear, Removable, Comfortable</h4>
@@ -61,7 +71,11 @@
     </article>
     <article>
         <h3 id="white">Whitening</h3>
-        <p>Dr. DeLucia always strives to offer his patients the best and most up to date whitening system. Please call the office for information on what system we are using to get the best results</p>
+        <h4>Get more confidence in your smile</h4>
+		<p>Your smile says more about you than any other physical feature; it is the first thing people notice. Imagine the difference a whiter smile could make for you.</p>
+		<p>It is important to keep your smile bright.A bright smile will leave a lasting impression. However, with so many whitening alternatives available, how do you know which option is right for you?</p>
+		<p>If you are looking for the best whitening results possible, start by calling the office and asking about the Opalescence line of whitening products, the leader in tooth whitening. The professional-strength Opalescence whitening treatments provide beautiful, long-lasting results. In addition, all Opalesence products safely and effectively whiten teeth while also preventing cavities and improving the overall health of your enamel.</p>
+		<p>Because Opalescence is so powerful and effective, it is only available through your dentist.</p>
         <a href="#content">back to top</a>
     </article>
     <article>
@@ -134,7 +148,6 @@
         </ul>
         <h4>How are Veneers different from Bonding or Crowns?</h4>
         <p>Bonding is a resin filling material that was used for several years to cover the front surface of teeth. Today, we generally use bonding only to fill in small surfaces or cavities and repair chips in teeth. A full crown is required when a tooth has had root canal treatment, or when a substantial amount of the entire tooth structure (enamel) has been lost.</p>
-        <h1>left off here</h1>
         <h4>How are Porcelain Veneers done?</h4>
         <p>At the first appointment the teeth are prepared for the veneers and an impression is taken. This impression is then sent to a lab where each porcelain veneer is custom made to the dentist's specifications and beautiful temporaries are fabricated to simulate your new smile so you can expect to leave the first appointment looking better than when you came in. At the second appointment the veneers are permanently adhered to the natural teeth.</p>
         <h4>What to Expect</h4>
@@ -166,30 +179,41 @@
     </article>
     <article>
     	<h3 id="gum">Gum (Periodontal) Treatment</h3>
+		<h4>What is gum disease?</h4>
+		<p>Gum disease is the swelling or soreness of the gums (soft tissue) around your teeth. It is caused by bacteria in plaque, a sticky, colorless film that forms on your teeth.</p>
+		<p>the plaque bacteria produce toxins that can lead to inflammation of the gums called gingivitis. This initial stage of gum disease is reversible. However, if you do not remove plaque by brushing and flossing your teeth, it can build up and infect your gums, teeth and the bone tha supports the,, leading to a more severe form of gum disease, periodontitis. If left untreated, periodontitis can result in the loss of bone and teeth.</p>
+		<p>The signs of gum disease are not always easy to see and can be painless. The earlier gum disease is caught, the easier it is to treat. That's why it's important to see your dentist regularly.</p>
+		<h4>What should you do to help prevent gum disease?</h4>
+		<ul>
+			<li>Brush with a soft-bristled toothbrush and clean between teeth wih floss or an interdental cleaner the way your dentist tells you to do.</li>
+			<li>Brush your teeth twice a day</li>
+			<li>Get regular professional dental cleanings at least twice a year. This is the only way to remove plaque that has hardened into tarter. You may not be aware that this has happened. Dr. DeLucia will need to evaluate and clean or "scale" your teeth to remove the tartar above and below the gumline.</li>
+			<li>Do not smoke cigarettes or use other forms of tobacco.</li>
+			<li>If your condition is very serious, additional treatment may be necessary. Dr. DeLucia will tell whether you will need treatment in addition to a routine cleaning.</li>
+		</ul>
+        <a href="#content">back to top</a>
+    </article>
+	<article>
+		<h3 id="ext">Extractions</h3>
+		<p>Whenever possible, the goal of restorative and periodontic dentistry is to conserve as much of your natural tooth structure as possible. However, there are some instances where the natural tooth or supporting bone is damaged beyond the point of being salvageable. In these cases, tooth extraction is the most reasonable and effective course of treatment.</p>
+		<p>Dr. DeLucia uses the &#xD6;gram System-an advanced, atraumatic, non-invasive bioengineered micro-motion exodontia (extraction) technology system for the 21st century.</p>
         <a href="#content">back to top</a>
     </article>
     <article>
-      <h3 id="ext">Extractions</h3>
-        <a href="#content">back to top</a>
-    </article>
-    <article>
-      <h3 id="smile">Smile Makeovers</h3>
-        <a href="#content">back to top</a>
-    </article>
-    <article>
-      <h3 id="cosmBond">Cosmetic Bonding</h3>
+		<h3 id="cosmBond">Cosmetic Bonding</h3>
+		<p>Dental bonding is a procedure in which a tooth-colored resin material (a durable plastic material) is applied and hardened with a special light, which ultimately "bonds" the material to the tooth to restore or improve person's smile.</p>
         <a href="#content">back to top</a>
     </article>
     </div></div><footer>
-        <p id="tc">Serving the Treasure Coast for Over 28 Years</p>
-        <p>Phone: 772.287.7077 | Fax: 772.220.4702 | Address: 731 Colorado Avenue, Stuart FL 34994</p>
-        <div id="footer_badges">
-            <div id = "angies-list-web-badge" style = "max-width:300px"><iframe src="http://www.angieslist.com/al-web-badge/568571/93431" id="badge-iframe" frameborder="0" scrolling="no"></iframe></div>
-            <div id="facebook_link"><a href="http://www.facebook.com/anthonydeluciadds"><img src="../../images/facebook_logo.png" alt="Like us on Facebook!"></a></div>
-            <div id="yelp_badge"><a href="http://www.yelp.com/biz/anthony-delucia-dds-stuart"><img src="../../images/yelp_logo.jpeg" alt="See us on Yelp"></a></div>
-            <div id="google_badge"><a href="https://plus.google.com/106815596562986295093"><img src="../../images/google_plus.png" alt="Follow us on Google Plus"></a></div>
-        </div>
-        <p id="copyright_info">Copyright © 2004 Anthony DeLucia D.D.S., P.A. All Rights Reserved</p>
-    </footer>
+		<p class="txt_drop_shadow">Serving the Treasure Coast for Over 28 Years</p>
+		<p>Phone: 772.287.7077 | Fax: 772.220.4702 | Address: 731 Colorado Avenue, Stuart FL 34994</p>
+		<div id="footer_badges">
+			<iframe id = "angies-list-web-badge" src="http://www.angieslist.com/al-web-badge/568571/93431" target="_blank" id="badge-iframe" frameborder="0" scrolling="no"></iframe>
+			<a href="http://www.facebook.com/anthonydeluciadds"><img id="fb_link" src="../../images/facebook_logo.png" alt="Like us on Facebook!"></a>
+			<a href="http://www.yelp.com/biz/anthony-delucia-dds-stuart"><img id="yelp_badge" src="../../images/yelp_logo.png" alt="See us on Yelp"></a>
+			<a href="https://plus.google.com/106815596562986295093"><img id="google_badge" src="../../images/google_plus.png" alt="Follow us on Google Plus"></a>
+		</div>
+		<p id="copyright_info">Copyright © 2004 Anthony DeLucia D.D.S., P.A. All Rights Reserved</p>
+	</footer>
 </body>
 </html>
