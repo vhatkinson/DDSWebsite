@@ -3,16 +3,9 @@
 <head>
 	<meta charset="UTF-8">
     <link rel="stylesheet" href="../css/styles.css"/>
+	<script type="text/javascript" src="../js/functions.js"></script>
     <link href='http://fonts.googleapis.com/css?family=Playfair+Display:300' rel='stylesheet' type='text/css'>
 	<title>Dr. Anthony DeLucia, D.D.S. - Meet Dr. DeLucia</title>
-	<script>
-		function showMenu() {
-			document.getElementById("submenu").style.display="block";
-		}
-		function hideMenu() {
-			document.getElementById("submenu").style.display="none";
-		}
-	</script>
 </head>
 <body><div id="page">
 	<header><a href="../index.html">
@@ -20,7 +13,8 @@
 			<img id="logo" src="../images/delucia_dds_logo.png" alt="Anthony DeLucia D.D.S., P.A. logo">
 			<h1>Anthony DeLucia, D.D.S., P.A.<br>Implant, Cosmetic & General Dentistry</h1>
 		</div>
-		<p id="header_right">772.287.7077</p>
+		<p id="header_right">772.287.7077<br>731 Colorado Ave., Stuart, Fl 34994</p>
+		<p id="header_bottom">Serving the Stuart, Palm City, Jensen Beach, and Port St. Lucie areas for over 28 years</p>
 	</a></header>
 	<nav>
 		<ul id="menu">
@@ -38,43 +32,51 @@
 			<li><a href="contact_us.html" class="menu_option">Contact Us</a></li>
 		</ul>
 	</nav>
-    <img id="menu_photo" src="../images/female_model_menu_photo.png">
+    <img id="menu_photo" src="../images/female_model_menu_photo_closeup.jpg">
     <div id="content">
     	<h2>Anthony DeLucia, D.D.S.</h2>
-        <img id="dr_delucia_photo" src="../images/dr_delucia_photo.jpg">
-        <p>Anthony DeLucia, D.D.S. is a 1983 graduate of Rollins College in Winter Park, Florida where he earned a Bachelor's Degree in Biology and Chemistry. He received his Doctorate of Dental Surgery Degree from Georgetown University Dental School in Washington D.C. in 1987.<br>Dr. DeLucia has maintained a private practice in Stuart since 1987, focusing on cosmetic and reconstructive dentistry. He has been voted Best Dentist by The Hometown News 2013 and 2014 Readers' Choice.</p><br>
-        <h3>Training and Certifications</h3>
-        	<ul>
-            	<li>Invisalign&reg</li>
-				<li>Clear Correct&reg</li>
-                <li>Aesthetic Mentors Comprehensive BOTOX and Dermal Filler Workshop</li>
-                <li>DentaSpa Seminars Comprehensive BOTOX and Dermal Fillers</li>
-				<li>Implant Seminars Comprehensive Implant Continuum (100+ hours)</li>
-				<li>Implant Educators Comprehensive Implant Continuum (100+ hours)</li>
-				<li>Implant Educators Hands-on Implant Surgery and Restoration</li>
-                <li>The &#xD6;gram System course for Advanced Principles and Surgical Techniques in Exodontia</li>
-                <li>World Clinical Laser Institute Standard Proficiency Dental Laser Course</li>
-                <li>The Rosenthal Institute at Palm Beach Certification in Aesthetics</li>
-            </ul>
-        <h3>Memberships</h3>
-        	<ul>
-            	<li>American Dental Association</li>
-                <li>Florida Dental Association</li>
-                <li>Treasure Coast Dental Society</li>
-                <li>American Academy of Cosmetic Dentistry</li>
-                <li>Academy of Laser Dentistry</li>
-            </ul>
+		<div id="meet_dr_container_top">
+			<img id="dr_delucia_photo" src="../images/dr_delucia_photo.jpg">
+			<p id="meet_dr_p">Anthony DeLucia, D.D.S. is a 1983 graduate of Rollins College in Winter Park, Florida where he earned a Bachelor's Degree in Biology and Chemistry. He received his Doctorate of Dental Surgery Degree from Georgetown University Dental School in Washington D.C. in 1987.<br><br>Dr. DeLucia has maintained a private practice in Stuart since 1987, focusing on cosmetic and reconstructive dentistry. He has been voted Best Dentist by The Hometown News 2013 and 2014 Readers' Choice.</p>
+		</div>
+		<div id="meet_dr_container_bottom">
+			<div id="meet_dr_container_left">
+				<h3>Training and Certifications</h3>
+					<ul>
+						<li>Invisalign<span class="reg_tm">&reg</span></li>
+						<li>Clear Correct<span class="reg_tm">&reg</span></li>
+						<li>Aesthetic Mentors Comprehensive BOTOX<span class="reg_tm">&reg</span> and Dermal Filler Workshop</li>
+						<li>DentaSpa Seminars Comprehensive BOTOX<span class="reg_tm">&reg</span> and Dermal Fillers</li>
+						<li>Implant Seminars Comprehensive Implant Continuum (100+ hours)</li>
+						<li>Implant Educators Comprehensive Implant Continuum (100+ hours)</li>
+						<li>Implant Educators Hands-on Implant Surgery and Restoration</li>
+						<li>The &#xD6;gram System course for Advanced Principles and Surgical Techniques in Exodontia</li>
+						<li>World Clinical Laser Institute Standard Proficiency Dental Laser Course</li>
+						<li>The Rosenthal Institute at Palm Beach Certification in Aesthetics</li>
+					</ul>
+			</div>
+			<div id="meet_dr_container_right">
+				<h3>Memberships</h3>
+					<ul>
+						<li>American Dental Association</li>
+						<li>Florida Dental Association</li>
+						<li>Treasure Coast Dental Society</li>
+						<li>American Academy of Cosmetic Dentistry</li>
+						<li>Academy of Laser Dentistry</li>
+					</ul>
+			</div>
+		</div>
     </div>
     </div><footer>
 		<p class="txt_drop_shadow">Serving the Treasure Coast for Over 28 Years</p>
 		<p>Phone: 772.287.7077 | Fax: 772.220.4702 | Address: 731 Colorado Avenue, Stuart FL 34994</p>
 		<div id="footer_badges">
-			<iframe id = "angies-list-web-badge" src="http://www.angieslist.com/al-web-badge/568571/93431" target="_blank" id="badge-iframe" frameborder="0" scrolling="no"></iframe>
-			<a href="http://www.facebook.com/anthonydeluciadds"><img id="fb_link" src="../images/facebook_logo.png" alt="Like us on Facebook!"></a>
-			<a href="http://www.yelp.com/biz/anthony-delucia-dds-stuart"><img id="yelp_badge" src="../images/yelp_logo.png" alt="See us on Yelp"></a>
-			<a href="https://plus.google.com/106815596562986295093"><img id="google_badge" src="../images/google_plus.png" alt="Follow us on Google Plus"></a>
+			<a href="http://www.angieslist.com/companylist/us/fl/stuart/delucia%2C-dr-anthony-reviews-568571.htm" target="_blank"><img id="angies-list_badge" src="../images/angies_list_badge.jpg"></a>
+			<a href="http://www.facebook.com/anthonydeluciadds" target="_blank"><img id="fb_link" src="../images/facebook_logo.png" alt="Like us on Facebook!"></a>
+			<a href="http://www.yelp.com/biz/anthony-delucia-dds-stuart" target="_blank"><img id="yelp_badge" src="../images/yelp_logo.png" alt="See us on Yelp"></a>
+			<a href="https://plus.google.com/106815596562986295093" target="_blank"><img id="google_badge" src="../images/google_plus.png" alt="Follow us on Google Plus"></a>
 		</div>
-		<p id="copyright_info">Copyright © 2004 Anthony DeLucia D.D.S., P.A. All Rights Reserved</p>
+	<p id="copyright_info">Copyright © 2004 Anthony DeLucia D.D.S., P.A. All Rights Reserved</p>
 	</footer>
 </body>
 </html>
