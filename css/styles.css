@@ -66,63 +66,94 @@ h1 {
 
 /*****Navigation*****/
 nav {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
+    display: block;
+    width: 930px;
 }
 #menu {
+    display: block;
     margin: 0 auto 10px auto;
     padding: 0;
     list-style: none;
-    width: 923px;
+    width: 930px;
+    box-shadow: 2px 4px 5px black;
 }
 #menu li {
     display: inline-block;
+    vertical-align: middle;
     position: relative;
-    margin: 0;
+    margin: 0 -3px;
+    padding: 10px 0;
+    background: rgb(0,85,61); /*forest green*/
+    font: small-caps 16px Helvetica, Arial, sans-serif;
+    color: #FFFFFF;
+    text-align: center;
 }
 #menu a {
     color: #FFFFFF;
-    font: small-caps 15px Helvetica, Arial, sans-serif; /*15px*/
 }
-#first_menu_option {
-    background: rgb(0,85,61); /*forest green*/
-    margin-right: -2px;
-    padding: 10px 23px;
-    box-shadow: 5px 4px 5px black;
-}
-#first_menu_option:hover {
+#menu a:hover {
     background: rgb(45,23,21); /*dark brown*/
 }
-.menu_option {
-    background: rgb(0,85,61); /*forest green*/
-    margin: 0 -3px;
-    padding: 10px 21px;
-    position: relative;
-    display: inline-block;
-    box-shadow: 5px 4px 5px black;
+#option_home {
+    width: 102px;
 }
-.menu_option a:visited {
-    color: #FFFFFF;
+#option_home a {
+    padding: 10px 38px;
 }
-.menu_option:hover {
-    background: rgb(45,23,21); /*dark brown*/
+#option_services {
+    width: 130px; /*115*/
+}
+#option_services a {
+    padding: 10px 30px;
+}
+#option_patient {
+    width: 207px;
+}
+#option_meet_dr {
+    width: 200px;
+}
+#option_meet_dr a {
+    padding: 10px 30px;
+}
+#option_patient a {
+    padding: 10px 28px;
+}
+#option_smile, #option_contact {
+    width: 152px;
+}
+#option_smile a {
+    padding: 10px 20px;
+}
+#option_contact a {
+    padding: 10px 32px;
 }
 #submenu {
     display: none;
     position: absolute;
-    width: 150px;
+    width: 170px;
     padding: 0;
-    left: -2px;
+    top: 37px;
+    left: 5px;
     box-shadow: 2px 4px 5px;
+}
+#submenu li {
+    padding: 0;
+    text-align: left;
+}
+#submenu a:hover {
+    background: rgb(0,85,61); /*forest green*/
 }
 .submenu_option {
     display: block;
-    padding: 10px 23px 10px 10px;
+    padding: 0;
     background: rgb(45,23,21); /*dark brown*/
 }
 .submenu_option:hover {
     background: rgb(0,85,61); /*forest green*/
 }
+
 
 
 
@@ -184,6 +215,10 @@ p {
 
 
 /*****Misc. Content*****/
+ol {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 ul {
     list-style: square;
     font-family: Arial, Helvetica, sans-serif;
@@ -226,6 +261,11 @@ ul li {
     display: inline-block;
     vertical-align: top;
     width: 660px;
+}
+.hometown_news_logo {
+    display: block;
+    width: 150px;
+    margin: 0 auto 10px auto;
 }
 #meet_dr_container_bottom {
     display: block;
@@ -328,6 +368,9 @@ ul li {
 .slideShow_button:hover {
     background: rgb(45,23,21); /*dark brown*/
 }
+.slideShow_button:visited {
+    color: #FFFFFF;
+}
 #testimonial_commercial {
     width: 600px;
     display: block;
@@ -341,7 +384,7 @@ ul li {
 #services_list {
     list-style: none;
     margin: 0 auto;
-    width: 670px;
+    width: 808px;
     display: block;
     padding: 0;
 }
