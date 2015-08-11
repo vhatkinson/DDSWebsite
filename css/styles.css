@@ -72,82 +72,56 @@ nav {
     width: 930px;
 }
 #menu {
-    display: block;
     margin: 0 auto 10px auto;
     padding: 0;
+    width: 906px;
     list-style: none;
-    width: 930px;
-    box-shadow: 2px 4px 5px black;
+    box-shadow: 2px 4px 5px;
 }
 #menu li {
     display: inline-block;
-    vertical-align: middle;
     position: relative;
-    margin: 0 -3px;
-    padding: 10px 0;
-    background: rgb(0,85,61); /*forest green*/
-    font: small-caps 16px Helvetica, Arial, sans-serif;
-    color: #FFFFFF;
-    text-align: center;
+		padding: 0;
+		margin: 0;
 }
 #menu a {
     color: #FFFFFF;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-variant: small-caps;
 }
-#menu a:hover {
+#first_menu_option {
+    background: rgb(0,85,61); /*forest green*/
+    margin-right: -2px;
+    padding: 10px 26px;
+}
+#first_menu_option:hover {
     background: rgb(45,23,21); /*dark brown*/
 }
-#option_home {
-    width: 102px;
-}
-#option_home a {
-    padding: 10px 38px;
-}
-#option_services {
-    width: 130px; /*115*/
-}
-#option_services a {
-    padding: 10px 30px;
-}
-#option_patient {
-    width: 207px;
-}
-#option_meet_dr {
-    width: 200px;
-}
-#option_meet_dr a {
-    padding: 10px 30px;
-}
-#option_patient a {
+.menu_option {
+    background: rgb(0,85,61); /*forest green*/
+    margin: 0 -3px;
     padding: 10px 28px;
+    position: relative;
+    display: inline-block;
 }
-#option_smile, #option_contact {
-    width: 152px;
+.menu_option a:visited {
+    color: #FFFFFF;
 }
-#option_smile a {
-    padding: 10px 20px;
-}
-#option_contact a {
-    padding: 10px 32px;
+.menu_option:hover {
+    background: rgb(45,23,21); /*dark brown*/
 }
 #submenu {
     display: none;
     position: absolute;
-    width: 170px;
+    width: 150px;
     padding: 0;
-    top: 37px;
-    left: 5px;
+    left: -3px;
     box-shadow: 2px 4px 5px;
-}
-#submenu li {
-    padding: 0;
-    text-align: left;
-}
-#submenu a:hover {
-    background: rgb(0,85,61); /*forest green*/
 }
 .submenu_option {
     display: block;
-    padding: 0;
+    padding: 10px 23px 10px 10px;
     background: rgb(45,23,21); /*dark brown*/
 }
 .submenu_option:hover {
@@ -156,12 +130,11 @@ nav {
 
 
 
-
 /*****Footer*****/
 footer {
-    width: 930px;
-    margin: 10px auto;
-    padding: 5px 10px;
+	width: 930px;
+	margin: 10px auto;
+	padding: 5px 10px;
 	background: rgb(0,85,61); /*forest green*/
 	border-radius: 8px;
 }
@@ -425,8 +398,8 @@ a:visited {
 	float:left;
 	overflow: hidden;
 	width:800px;
-    border: none;
-    background: none;
+  border: none;
+  background: none;
 }
 
 /*****Color Palette*****/

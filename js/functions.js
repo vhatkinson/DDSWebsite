@@ -17,11 +17,33 @@ window.onload = function() {
 
     //Pre load images
     images[0] = new Image();
-    images[0].src = "../images/smile_gallery/DSC_1522-5.jpg";
+    images[0].src = "../images/smile_gallery/patient1_before.jpg";
     images[1] = new Image();
-    images[1].src = "../images/smile_gallery/Untitled copy.png";
+    images[1].src = "../images/smile_gallery/patient1_after.jpg";
     images[2] = new Image();
-    images[2].src = "../images/smile_gallery/Untitled.png";
+    images[2].src = "../images/smile_gallery/patient2_before.jpg";
+    images[3] = new Image();
+    images[3].src = "../images/smile_gallery/patient2_after.jpg";
+    images[4] = new Image();
+    images[4].src = "../images/smile_gallery/patient3_before.jpg";
+    images[5] = new Image();
+    images[5].src = "../images/smile_gallery/patient3_after.jpg";
+    images[6] = new Image();
+    images[6].src = "../images/smile_gallery/patient4_before.jpg";
+    images[7] = new Image();
+    images[7].src = "../images/smile_gallery/patient4_after.jpg";
+    images[8] = new Image();
+    images[8].src = "../images/smile_gallery/patient5_before.jpg";
+    images[9] = new Image();
+    images[9].src = "../images/smile_gallery/patient5_after.jpg";
+    /*images[10] = new Image();
+    images[10].src = "../images/smile_gallery/patient6_before.jpg";
+    images[11] = new Image();
+    images[11].src = "../images/smile_gallery/patient6_after.jpg";
+    images[12] = new Image();
+    images[12].src = "../images/smile_gallery/patient7_before.jpg";
+    images[13] = new Image();
+    images[13].src = "../images/smile_gallery/patient7_after.jpg";*/
 
     slide();
 }
