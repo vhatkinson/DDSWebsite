@@ -2,7 +2,7 @@
 body {
 	margin: 0 auto;
 	width: 950px;
-  background: rgb(45,23,21); /*dark brown*/
+    background: rgb(45,23,21); /*dark brown*/
 }
 #page {
 	width: 930px;
@@ -382,10 +382,11 @@ a:visited {
     color: #000000;
 }
 
+/*****Viewport for Mobile*****/
 
 
 /*****Search Engine Optimization*****/
-/*.seo {*/
+.seo {
 	visibility: hidden;
 	font-size: 0;
 	float:left;
@@ -393,40 +394,6 @@ a:visited {
 	width:800px;
   border: none;
   background: none;
-}
-
-/*****Viewport for Mobile*****/
-@media only screen and (max-width: 700px){
-	body {width: 100%; margin: 0 auto}
-	#page {width: 100%; margin: 0 auto}
-	footer {width: 100%; margin: 0 auto}
-
-	/**Header**/
-	header {width: 95%; margin: 0 auto 20px auto;}
-	h1 {font-size: 20px; line-height: 25px}
-	#menu_photo {width: 100%;}
-	#header_left {width: 100%; display: block; margin-bottom: 10px}
-	#header_right, #header_bottom {display: inline-block; vertical-align: middle;
-		text-align: center; width: 40%; margin: 0; padding: 0; float: none}
-
-	/**Menu**/
-	nav {width: 95%}
-	#menu {
-		display: block;
-		width: 95%;
-	}
-
-	/**Content**/
-	#dr_delucia_photo {margin: 0 auto; display: block; width: 30%}
-	#meet_dr_p {text-align: center;}
-	#meet_dr_container_bottom, #meet_dr_container_left, #meet_dr_container_right
-	{display: block; width: 100%; margin: 0 auto}
-	#contact_us_container_left, #contact_us_container_right, #google_map
-	{margin: 0 auto; display: block; width: 100%; text-align: center}
-	#services_list, #services_list li {display: block; margin: 20px auto; width: 100%}
-	.dermal_container {display: block; margin: 0 auto; width: 100%}
-	.center_container {width: 100%; margin: 0 auto}
-	.cosmetic_list {text-align: center; width: 50%; margin: 0 auto}
 }
 
 /*****Color Palette*****/
