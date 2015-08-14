@@ -2,8 +2,16 @@
 <html lang=en>
 <head>
 	<meta charset="UTF-8">
-    <link rel="stylesheet" href="../css/styles.css"/>
+  <link rel="stylesheet" href="../css/styles.css"/>
 	<script type="text/javascript" src="../js/functions.js"></script>
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	  ga('create', 'UA-66364816-1', 'auto');
+	  ga('send', 'pageview');
+	</script>
 	<meta name="viewport" content="width=device-width" />
 	<title>Dr. Anthony DeLucia, D.D.S. - Smile Gallery</title>
 </head>
@@ -30,18 +38,32 @@
 			<li><a href="patient_information.html" class="menu_option">Patient Information</a></li>
 			<li><a href="contact_us.html" class="menu_option">Contact Us</a></li>
 		</ul>
-		<img id="menu_photo" src="../images/female_model_menu_photo_closeup.jpg">
+		<h2 id="mobile_menu_button"><a href="#" onclick="displayMobileMenu()">Menu</a></h2>
+			<ul id="mobile_menu">
+				<li><a href="../index.html">Home</a></li>
+				<li><a href="meet_dr_delucia.html">Meet Dr. DeLucia</a></li>
+				<li><a href="services.html">Services</a>
+				<ul id="mobile_submenu">
+					<li><a href="services/cosmetic_procedures.html">Cosmetic Procedures</a></li>
+					<li><a href="services/dermal_fillers_and_facial_aesthetics.html">Dermal Fillers&Facial Aesthetics</a></li>
+					<li><a href="services/iv_sedation_dentistry.html">I.V. Conscious Sedation Dentistry</a></li>
+				</ul></li>
+				<li><a href="#">Smile Gallery</a></li>
+				<li><a href="patient_information.html">Patient Information</a></li>
+				<li><a href="contact_us.html">Contact Us</a></li>
+		</ul>
+		<img id="menu_photo" src="../images/female_model_menu_photo.png">
 	</nav>
     <div id="content">
 		<h2>Smile Gallery</h2>
-		<div id="slideShow">
-			<img id="slideShow_img" src="../images/smile_gallery/patient1_before.jpg">
-		</div>
+
+		<img id="slideShow_img" src="../images/smile_gallery/patient1_before.jpg">
+
 		<div id="slideShow_button_container">
-		<a class="slideShow_button" href="JavaScript:slide()" title="Start">Start</a>
-		<a class="slideShow_button" href="JavaScript:prev()" title="Previous">Previous</a>
-		<a class="slideShow_button" href="JavaScript:next()" title="Next">Next</a>
-		<a class="slideShow_button" href="JavaScript:stopSlide()" title="Stop">Stop</a>
+			<a class="slideShow_button" href="JavaScript:slide()" title="Start">Start</a>
+			<a class="slideShow_button" href="JavaScript:prev()" title="Previous">Previous</a>
+			<a class="slideShow_button" href="JavaScript:next()" title="Next">Next</a>
+			<a class="slideShow_button" href="JavaScript:stopSlide()" title="Stop">Stop</a>
 		</div>
     </div>
     </div>
@@ -54,7 +76,9 @@
 			<a href="http://www.yelp.com/biz/anthony-delucia-dds-stuart" target="_blank"><img id="yelp_badge" src="../images/yelp_logo.png" alt="See us on Yelp"></a>
 			<a href="https://plus.google.com/106815596562986295093" target="_blank"><img id="google_badge" src="../images/google_plus.png" alt="Follow us on Google Plus"></a>
 		</div>
-		<p id="copyright_info">Copyright © 2004 Anthony DeLucia D.D.S., P.A. All Rights Reserved</p>
   </footer>
+	<div id="subfooter">
+    <p id="copyright_info">Copyright © 2004 Anthony DeLucia D.D.S., P.A. All Rights Reserved.</p>
+  </div>
 </body>
 </html>

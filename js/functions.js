@@ -5,6 +5,21 @@ function showMenu() {
 function hideMenu() {
     document.getElementById("submenu").style.display="none";
 }
+function showMobileMenu() {
+    document.getElementById("mobile_menu").style.display="block";
+}
+function hideMobileMenu() {
+    document.getElementById("mobile_menu").style.display="none";
+}
+function displayMobileMenu() {
+    if(document.getElementById("mobile_menu").style.display=="none") {
+      document.getElementById("mobile_menu").style.display="block";
+    }
+    else {
+      document.getElementById("mobile_menu").style.display="none";
+    }
+}
+
 
 /*****Slide Show*****/
 var imgSlide;

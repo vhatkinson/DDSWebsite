@@ -1,3 +1,6 @@
+@import url(http://fonts.googleapis.com/css?family=Playfair+Display);
+
+
 /*****Main Content*****/
 body {
 	margin: 0 auto;
@@ -8,8 +11,7 @@ body {
 	width: 930px;
 	margin: 0 auto;
 	padding: 10px;
-	background: #fff;
-	border-radius: 8px;
+	background: #F5F5F5;
 }
 #content {
 }
@@ -71,6 +73,7 @@ nav {
     display: block;
     width: 930px;
 }
+#mobile_menu, #mobile_menu_button {display: none}
 #menu {
     margin: 0 auto 10px auto;
     padding: 0;
@@ -79,6 +82,7 @@ nav {
     box-shadow: 2px 4px 5px;
 		background: rgb(0,85,61); /*forest green*/
 		text-align: center;
+		border-radius: 10px;
 }
 #menu li {
     display: inline-block;
@@ -105,6 +109,12 @@ nav {
 .menu_option:hover {
     background: rgb(45,23,21); /*dark brown*/
 }
+#first_option {
+
+}
+#last_option {
+
+}
 #submenu {
     display: none;
     position: absolute;
@@ -112,6 +122,7 @@ nav {
     padding: 0;
     left: 0px;
     box-shadow: 2px 4px 5px;
+		text-align: left;
 }
 .submenu_option {
     display: block;
@@ -127,22 +138,22 @@ nav {
 /*****Footer*****/
 footer {
 	width: 930px;
-	margin: 10px auto;
+	margin: 0 auto;
 	padding: 5px 10px;
 	background: rgb(0,85,61); /*forest green*/
-	border-radius: 8px;
 }
 footer p {
 	text-align: center;
 	color: #fff;
+	font-variant: small-caps;
 }
 .txt_drop_shadow {
 	text-shadow:4px 4px 2px #000;
 }
 /**Footer Badges**/
 #footer_badges {
-	width: 350px;
-    margin: auto;
+  margin: 0 auto 15px auto;
+	text-align: center;
 }
 #fb_link, #yelp_badge, #google_badge, #angies-list_badge {
     display: inline;
@@ -151,7 +162,13 @@ footer p {
     vertical-align: top;
 }
 #copyright_info {
-    margin-top: 20px;
+    /*margin-top: 20px;*/
+}
+/**Subfooter**/
+#subfooter {
+	color: #FFF;
+	text-align: center;
+	font-size: 12px;
 }
 
 
@@ -160,7 +177,6 @@ h2 {
     font: small-caps 300 30px Helvetica, Arial, sans-serif;
     margin: 10px 0;
     background: rgb(45,23,21); /*dark brown*/
-    border: groove;
     color: #FFFFFF;
     padding: 4px;
 }
@@ -177,7 +193,7 @@ h4 {
 }
 p {
     font-family: Helvetica, Arial, sans-serif;
-    line-height: 23px;
+    line-height: 20px;
 }
 
 
@@ -318,19 +334,22 @@ ul li {
     /*border: 5px solid rgb(0,85,61); /*forest green*/
 }
 #slideShow_img {
-    width: 600px;
+		margin: 0 auto;
+		display: block;
+		width: 600px;
     height: 400px;
 }
 #slideShow_button_container {
-    width: 360px;
-    display: block;
-    margin: 10px auto 40px auto;
+    margin: 15px auto 20px auto;
+		text-align: center;
 }
 .slideShow_button {
     padding: 5px 20px;
     margin: 0 5px;
     background: rgb(0,85,61); /*forest green*/
     color: #FFFFFF;
+		border-radius: 10px;
+		border: outset #000;
 }
 .slideShow_button:hover {
     background: rgb(45,23,21); /*dark brown*/
@@ -351,9 +370,9 @@ ul li {
 #services_list {
     list-style: none;
     margin: 0 auto;
-    width: 808px;
     display: block;
     padding: 0;
+		text-align: center;
 }
 #services_list li {
     display: inline-block;
@@ -385,7 +404,7 @@ a:visited {
 
 
 /*****Search Engine Optimization*****/
-/*.seo {*/
+/*.seo {
 	visibility: hidden;
 	font-size: 0;
 	float:left;
@@ -393,32 +412,64 @@ a:visited {
 	width:800px;
   border: none;
   background: none;
-}
+}*/
 
 /*****Viewport for Mobile*****/
 @media only screen and (max-width: 700px){
-	body {width: 100%; margin: 0 auto}
-	#page {width: 100%; margin: 0 auto}
-	footer {width: 100%; margin: 0 auto}
+	body, #page, footer, nav {width: 100%; margin: 0 auto}
 
 	/**Header**/
-	header {width: 95%; margin: 0 auto 20px auto;}
-	h1 {font-size: 20px; line-height: 25px}
+	header {width: 100%; margin: 0 auto 20px auto;}
+	h1 {font-size: 170%; line-height: 1em}
+	#logo {width: 10%; min-width: 50px}
 	#menu_photo {width: 100%;}
 	#header_left {width: 100%; display: block; margin-bottom: 10px}
-	#header_right, #header_bottom {display: inline-block; vertical-align: middle;
-		text-align: center; width: 40%; margin: 0; padding: 0; float: none}
+	#header_right {display: none}
+	#header_bottom {display: block; font-size: 80%;
+		text-align: center; width: 100%; margin: 0; padding: 0; float: none}
 
 	/**Menu**/
-	nav {width: 95%}
-	#menu {
+	#menu {display: none}
+	#mobile_menu_button {
 		display: block;
-		width: 95%;
+		width: 100%;
+		margin: 0;
+		background: rgb(0,85,61); /*forest green*/
+		font-family: Helvetica, Arial, sans-serif;
+		font-variant: small-caps;
+		text-align: center;
+		padding: 10px 0;
+		border-radius: 0px;
+	}
+	#mobile_menu_button a {
+		color: #FFF;
+		padding: 5px 40%;
+	}
+	#mobile_menu {
+		display: none;
+		text-align: left;
+		list-style: none;
+		background: rgb(45,23,21); /*dark brown*/
+		margin: 0;
+	}
+	#mobile_submenu {
+		list-style: none;
+		color: #FFF;
+	}
+	#mobile_menu a, #mobile_menu a:visited {
+		color: #FFF;
+		font-family: Helvetica, Arial, sans-serif;
+		font-variant: small-caps;
 	}
 
+
 	/**Content**/
+	p, ul, ol {font-size: 100%}
+	h2 {font-size: 165%}
+	h3 {font-size: 130%}
+	h4 {font-size: 120%}
 	#dr_delucia_photo {margin: 0 auto; display: block; width: 30%}
-	#meet_dr_p {text-align: center;}
+	#meet_dr_p {width: 100%}
 	#meet_dr_container_bottom, #meet_dr_container_left, #meet_dr_container_right
 	{display: block; width: 100%; margin: 0 auto}
 	#contact_us_container_left, #contact_us_container_right, #google_map
@@ -427,6 +478,13 @@ a:visited {
 	.dermal_container {display: block; margin: 0 auto; width: 100%}
 	.center_container {width: 100%; margin: 0 auto}
 	.cosmetic_list {text-align: center; width: 50%; margin: 0 auto}
+	#slideShow_img {width: 100%; height: auto}
+
+
+	/**Footer**/
+	footer p {font-size: 80%}
+	#footer_badges {width: 100%}
+	#footer_badges img {}
 }
 
 /*****Color Palette*****/

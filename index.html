@@ -4,17 +4,25 @@
 	<meta charset="utf-8" />
   <link rel="stylesheet" href="css/styles.css"/>
 	<script type="text/javascript" src="js/functions.js"></script>
-	<meta name="viewport" content="width=device-width" />
-	<link href='http://fonts.googleapis.com/css?family=Playfair+Display:300' rel='stylesheet' type='text/css'>
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	  ga('create', 'UA-66364816-1', 'auto');
+	  ga('send', 'pageview');
+	</script>
   <meta name="keywords" content="dentist, prosthodontics, endodontics, white fillings, metal-free fillings, mercury-free fillings, implants, implant, retained dentures, gum treatments, crowns, bridges, root canals, extractions, smile, makeovers, opalescence, whitening, orthodontics, invisalign, clear, correct, dentures, partials, dermal, fillers, xeomin, botox, radiesse, juvederm, belelo, mini implants, cosmetic, dentistry, cosmetic, dentures, veneers, bonding, smile, makeovers, laser, lazer, dentistry, sedation, dentistry, nitrous, oxide, sedation, teeth, cleaning, emergency, appointments available, stuart, florida, martin county, port st lucie, fort pierce, hobe sound, Jensen beach, Jensen, palm city"/>
-	<meta name="description" content="Dr. Anthony DeLucia D.D.S., P.A. Cosmetic and General Dentistry Serving: Stuart, Hobe Sound, Palm City, Jensen Beach & Port St. Lucie, Florida."/>
-	<title>Dr. Anthony DeLucia, D.D.S., P.A. - Cosmetic, Implant, and General Dentistry</title>
-    </head>
+	<!--<meta name="description" content="Dr. Anthony DeLucia D.D.S., P.A. Cosmetic and General Dentistry Serving: Stuart, Hobe Sound, Palm City, Jensen Beach & Port St. Lucie, Florida."/>-->
+	<meta name="description" content="Dr. DeLucia DDS has been serving the Stuart, Hobe Sound, Palm City, Jensen Beach, and Port St. Lucie area for over 28 years. Dr. DeLucia DDS specializes in cosmetic, general, and implant dentistry. Call for an appointment today!"/>
+	<meta name="viewport" content="width=device-width" />
+	<title>Dr. Anthony DeLucia, DDS PA - Cosmetic, Implant, and General Dentistry</title>
+</head>
 <body>
 <div id="page">
     <header><a href="#">
 			<div id="header_left">
-				<img id="logo" src="images/delucia_dds_logo.png" alt="Anthony DeLucia D.D.S., P.A. logo">
+				<img id="logo" src="images/delucia_dds_logo.png" alt="Anthony DeLucia, DDS PA logo">
 				<h1>Anthony DeLucia, D.D.S., P.A.<br>Implant, Cosmetic & General Dentistry</h1>
 			</div>
 			<p id="header_right">772.287.7077<br>731 Colorado Ave., Stuart, Fl 34994</p>
@@ -22,7 +30,7 @@
 		</a></header>
 	<nav>
 		<ul id="menu">
-			<li><a href="#" class="menu_option">Home</a></li>
+			<li><a href="#" class="menu_option" id="first_option">Home</a></li>
 			<li><a href="pages/meet_dr_delucia.html" class="menu_option">Meet Dr. DeLucia</a></li>
 			<li><a href="pages/services.html" class="menu_option" id="submenu_parent" onmouseover="showMenu()" onmouseout="hideMenu()">Services</a>
 			<ul id="submenu" onmouseover="showMenu()" onmouseout="hideMenu()">
@@ -32,10 +40,24 @@
 			</ul></li>
 			<li><a href="pages/smile_gallery.html" class="menu_option">Smile Gallery</a></li>
 			<li><a href="pages/patient_information.html" class="menu_option">Patient Information</a></li>
-			<li><a href="pages/contact_us.html" class="menu_option">Contact Us</a></li>
+			<li><a href="pages/contact_us.html" class="menu_option" id="last_option">Contact Us</a></li>
+		</ul>
+		<h2 id="mobile_menu_button"><a href="#" onclick="displayMobileMenu()">Menu</a></h2>
+			<ul id="mobile_menu">
+				<li><a href="#">Home</a></li>
+				<li><a href="pages/meet_dr_delucia.html">Meet Dr. DeLucia</a></li>
+				<li><a href="pages/services.html">Services</a>
+				<ul id="mobile_submenu">
+					<li><a href="pages/services/cosmetic_procedures.html">Cosmetic Procedures</a></li>
+					<li><a href="pages/services/dermal_fillers_and_facial_aesthetics.html">Dermal Fillers&Facial Aesthetics</a></li>
+					<li><a href="pages/services/iv_sedation_dentistry.html">I.V. Conscious Sedation Dentistry</a></li>
+				</ul></li>
+				<li><a href="pages/smile_gallery.html">Smile Gallery</a></li>
+				<li><a href="pages/patient_information.html">Patient Information</a></li>
+				<li><a href="pages/contact_us.html">Contact Us</a></li>
 		</ul>
 	</nav>
-	<img id="menu_photo" src="images/female_model_menu_photo_closeup.jpg">
+	<img id="menu_photo" src="images/female_model_menu_photo.png" alt="female model">
 	<div id="content">
     <!--<h2>Cosmetic Dentistry - Stuart, Florida</h2>-->
 		<h2>We Specialize in Beautiful, Healthy Smiles</h2>
@@ -55,16 +77,18 @@
      </div>
     </div>
 	<footer>
-        <p class="txt_drop_shadow">Serving the Treasure Coast for Over 28 Years</p>
-        <p>Phone: 772.287.7077 | Fax: 772.220.4702 | Address: 731 Colorado Avenue, Stuart FL 34994</p>
-		<p>Check us out on...</p>
-        <div id="footer_badges">
-			<a href="http://www.angieslist.com/companylist/us/fl/stuart/delucia%2C-dr-anthony-reviews-568571.htm" target="_blank"><img id="angies-list_badge" src="images/angies_list_badge.jpg"></a>
-            <a href="http://www.facebook.com/anthonydeluciadds" target="_blank"><img id="fb_link" src="images/facebook_logo.png" alt="Like us on Facebook!"></a>
-            <a href="http://www.yelp.com/biz/anthony-delucia-dds-stuart" target="_blank"><img id="yelp_badge" src="images/yelp_logo.png" alt="See us on Yelp"></a>
-            <a href="https://plus.google.com/106815596562986295093" target="_blank"><img id="google_badge" src="images/google_plus.png" alt="Follow us on Google Plus"></a>
-        </div>
-        <p id="copyright_info">Copyright © 2004 Anthony DeLucia D.D.S., P.A. All Rights Reserved</p>
+      <p class="txt_drop_shadow">Serving the Treasure Coast for Over 28 Years</p>
+      <p>Phone: 772.287.7077 | Fax: 772.220.4702 | Address: 731 Colorado Avenue, Stuart FL 34994</p>
+			<p>Check us out on...</p>
+			<div id="footer_badges">
+				<a href="http://www.angieslist.com/companylist/us/fl/stuart/delucia%2C-dr-anthony-reviews-568571.htm" target="_blank"><img id="angies-list_badge" src="images/angies_list_badge.jpg"></a>
+				<a href="http://www.facebook.com/anthonydeluciadds" target="_blank"><img id="fb_link" src="images/facebook_logo.png" alt="Like us on Facebook!"></a>
+				<a href="http://www.yelp.com/biz/anthony-delucia-dds-stuart" target="_blank"><img id="yelp_badge" src="images/yelp_logo.png" alt="See us on Yelp"></a>
+				<a href="https://plus.google.com/106815596562986295093" target="_blank"><img id="google_badge" src="images/google_plus.png" alt="Follow us on Google Plus"></a>
+			</div>
     </footer>
+		<div id="subfooter">
+			<p id="copyright_info">Copyright © 2004 Anthony DeLucia D.D.S., P.A. All Rights Reserved.</p>
+		</div>
 </body>
 </html>
